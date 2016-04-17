@@ -1,6 +1,20 @@
 body {
 	background-color: #000;
 	margin: 0;
+	font-family: Sans-Serif;
+}
+
+body a {
+	color: #666666;
+	text-decoration: none;
+}
+
+body a:hover {
+	text-decoration: underline;
+}
+
+body a:active {
+	text-decoration: underline;
 }
 
 div.discord {
@@ -13,4 +27,18 @@ iframe.discord {
 	width: 100%;
 	height: 100%;
 	border: none;
+}
+
+.logo {
+	width: 575px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.copyright {
+	width: 100%;
+	margin: 20px 0px;
+	color: #999999;
+	text-align: center;
 }
