@@ -67,37 +67,39 @@ div.links ul li :before {
 }
 
 #tabs {
-    list-style: none;
-    padding: 5px 0 2px 0;
-    margin: 0 0 0 0px;
-    font: 1em Sans-Serif;
+	list-style: none;
+	padding: 5px 0 2px 0;
+	margin: 0 0 0 0px;
+	font: 1em Sans-Serif;
 }
 
 #tabs li {
-    display: inline;
+	display: inline;
 }
 
 #tabs li a {
 	color: #000000;
-    border: 1px solid #a79532;
-    padding: 3px 2px;
-    text-decoration: none;
-    background-color: #a79532;
-    border-bottom: none;
-    outline: none;
-    border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
+	border: 1px solid #a79532;
+	padding: 3px 2px;
+	text-decoration: none;
+	background-color: #a79532;
+	border-bottom: none;
+	outline: none;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
 }
 
 #tabs li a:hover {
 	border: 1px solid #E0D698;
+	border-bottom: none;
 	background-color: #E0D698;
 }
 
 #tabs li.active a {
 	border: 1px solid #E0D698;
+	border-bottom: none;
 	background-color: #E0D698;
 }
 
@@ -109,20 +111,20 @@ div.links ul li :before {
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid #a79532;
-    border-top: none;
-	padding: 1px 5px;
+	border-top: none;
+	padding: 1px 4px;
 	margin-bottom: 25px;
 }
 
 .tab_content {
-    display: none;
+	display: none;
 }
 
 div.copyright {
-	width: 100%;
-	padding-bottom: 10px;
-	color: #999999;
-	text-align: center;
+width: 100%;
+padding-bottom: 10px;
+color: #999999;
+text-align: center;
 }
 
 /* Phone Portrait (smaller than logo) */
