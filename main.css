@@ -6,7 +6,7 @@ body {
 }
 
 body a {
-	color: #666666;
+	color: #a79532;
 	text-decoration: none;
 }
 
@@ -30,6 +30,24 @@ iframe.discord {
 	border: none;
 }
 
+div.links {
+	margin: 0 auto;
+	width: 350px;
+	padding-bottom: 10px;
+}
+
+div.links ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+ }
+
+div.links ul li:before {
+	color: #a79532;
+	content: "\0BB \020";
+ }
+
 .logo {
 	width: 575px;
 	border: none;
@@ -43,7 +61,7 @@ iframe.discord {
 	height: 575px;
 }
 
-.copyright {
+div.copyright {
 	width: 100%;
 	margin: 20px 0px;
 	color: #999999;
