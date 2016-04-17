@@ -31,6 +31,8 @@ iframe.discord {
 
 .logo {
 	width: 575px;
+	height: 575px;
+	border: none;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
@@ -47,8 +49,6 @@ iframe.discord {
 @media screen and (max-width: 576px) {
 	.logo {
 		width: 350px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 10px;
+		height: 350px;
 	}
 }
