@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<title>Vengeance Reborn</title>
+		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="HandheldFriendly" content="true">
@@ -14,13 +16,86 @@
     <div class="discord">
 		<iframe src="https://discordapp.com/widget?id=159209637827182592&theme=dark" class="discord" allowtransparency="true" frameborder="0"></iframe>
     </div>
-	<div class="links">
-		<ul>
-			<li><a href="http://discordapp.com/apps" target="_blank">Download the Discord App</a>
-			<li><a href="https://support.discordapp.com/hc/" target="_blank">Discord Help Center</a>
-			<li><a href="https://support.discordapp.com/hc/en-us/articles/209099387--Windows-Installer-Errors" target="_blank">Installer Errors (Windows)</a>
-			<li><a href="https://support.discordapp.com/hc/en-us/articles/211376518-Voice-Input-Modes-101-Push-to-Talk-Voice-Activated-" target="_blank">Voice Input Modes 101 (Push-to-Talk & Voice Activated)</a>
-		</ul>
+	<script>
+		$(document).ready(function(){
+			$("#tabs li").click(function() {
+				$("#tabs li").removeClass('active');
+				$(this).addClass("active");
+				$(".tab_content").hide();
+				var selected_tab = $(this).find("a").attr("href");
+				$(selected_tab).fadeIn();
+				return false;
+			});
+		});
+	</script>
+	<div id="tabs_wrapper">
+		<div id="tabs_container">
+			<ul id="tabs">
+				<li class="active"><a href="#tab1">Discord</a></li>
+				<li><a href="#tab2">Classes</a></li>
+				<li><a href="#tab3">Raiding</a></li>
+				<li><a href="#tab4">Addons</a></li>
+				<li><a href="#tab5">Resources</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="tabs_content_container">
+		<div id="tab1" class="tab_content" style="display: block;">
+			<div class="links">
+				<ul>
+					<li><a href="http://discordapp.com/apps" target="_blank">Download the Discord App</a>
+					<li><a href="https://support.discordapp.com/hc/" target="_blank">Discord Help Center</a>
+					<li><a href="https://status.discordapp.com/" target="_blank">Discord Server Status</a>
+					<li><a href="https://twitter.com/discordapp" target="_blank">Official Twitter account</a>
+					<li><a href="https://support.discordapp.com/hc/en-us/articles/209099387--Windows-Installer-Errors" target="_blank">Installer Errors (Windows)</a>
+					<li><a href="https://support.discordapp.com/hc/en-us/articles/211376518-Voice-Input-Modes-101-Push-to-Talk-Voice-Activated-" target="_blank">Voice Input Modes 101 (Push-to-Talk & Voice Activated)</a>
+				</ul>
+			</div>
+		</div>
+		<div id="tab2" class="tab_content">
+			<div class="links">
+				<ul>
+					<li><a href="http://www.icy-veins.com/wow/" target="_blank">Icy Veins</a>
+					<li><a href="http://www.noxxic.com/wow" target="_blank">Noxxic</a>
+					<li><a href="http://www.askmrrobot.com/" target="_blank">Ask Mr. Robot</a>
+					<li><a href="http://howtopriest.com/index.php" target="_blank">How To Priest</a>
+					<li><a href="http://www.sacredduty.net/" target="_blank">Sacred Duty</a>
+					<li><a href="http://forums.elitistjerks.com/" target="_blank">Elitist Jerks forums</a>
+				</ul>
+			</div>
+		</div>
+		<div id="tab3" class="tab_content">
+			<div class="links">
+				<ul>
+					<li><a href="https://www.warcraftlogs.com/" target="_blank">Warcraft Logs</a>
+					<li><a href="http://openraid.us/" target="_blank">OpenRaid</a>
+					<li><a href="http://guildox.com/" target="_blank">Guildox</a>
+				</ul>
+			</div>
+		</div>
+		<div id="tab4" class="tab_content">
+			<div class="links">
+				<ul>
+					<li><a href="http://mods.curse.com/addons/wow" target="_blank">Curse.com World of Warcraft Addons</a>
+					<li><a href="http://www.wowinterface.com/" target="_blank">WoWInterface</a>
+				</ul>
+			</div>
+		</div>
+		<div id="tab5" class="tab_content">
+			<div class="links">
+				<ul>
+					<li><a href="http://battle.net/wow" target="_blank">World of Warcraft Official Site</a>
+					<li><a href="http://www.wowhead.com/" target="_blank">Wowhead</a>
+					<li><a href="http://www.thottbot.com/" target="_blank">Thottbot</a>
+					<li><a href="http://wow.gamepedia.com/" target="_blank">Wowpedia</a>
+					<li><a href="http://www.wow-professions.com/" target="_blank">WoW-professions</a>
+					<li><a href="http://www.warcraftpets.com/" target="_blank">WarcraftPets</a>
+					<li><a href="https://theunderminejournal.com/#us/silvermoon" target="_blank">The Undermine Journal</a>
+					<li><a href="http://pycklesfashionplates.blogspot.com/" target="_blank">Pyckles Fashion Plates</a>
+					<li><a href="https://wowtoken.info/" target="_blank">WoW Token Info</a>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div class="copyright">
 		&#169; Copyright 2016 <a href="http://us.battle.net/wow/en/guild/silvermoon/Vengeance_Reborn/" target="_blank">Vengeance Reborn</a>, a <a href="http://battle.net/wow" target="_blank">World of Warcraft</a> guild on the <a href="http://us.battle.net/wow/en/forum/1182399/" target="_blank">US-Silvermoon</a> server. All Rights Reserved.
