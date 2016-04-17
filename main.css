@@ -42,3 +42,13 @@ iframe.discord {
 	color: #999999;
 	text-align: center;
 }
+
+/* Phone Portrait (smaller than logo) */
+@media screen and (max-width: 576px) {
+	.logo {
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+}
