@@ -2,6 +2,7 @@ body {
 	background-color: #000;
 	margin: 0;
 	font-family: Sans-Serif;
+	font-size: medium;
 }
 
 body a {
@@ -51,6 +52,10 @@ iframe.discord {
 
 /* Phone Portrait (smaller than logo) */
 @media screen and (max-width: 576px) {
+
+	body {
+		font-size: x-small;
+	}
 
 	.logo {
 		width: 350px;
