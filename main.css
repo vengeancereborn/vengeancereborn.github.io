@@ -49,6 +49,7 @@ div.links ul {
 	margin-left: 0;
 	padding-left: 1em;
 	text-indent: -1em;
+	color: #999999;
  }
 
 div.links ul li :before {
@@ -121,10 +122,10 @@ div.links ul li :before {
 }
 
 div.copyright {
-width: 100%;
-padding-bottom: 10px;
-color: #999999;
-text-align: center;
+	width: 100%;
+	padding-bottom: 10px;
+	color: #999999;
+	text-align: center;
 }
 
 /* Phone Portrait (smaller than logo) */
